@@ -226,4 +226,7 @@ nav ul li a {
         font-size: 25px; /* 휴대폰 화면에 적용될 글꼴 크기 */
         text-decoration: none;
     }
+    header {
+        padding : 10px 20px;
+    }
 }

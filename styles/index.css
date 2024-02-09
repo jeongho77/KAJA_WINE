@@ -68,7 +68,7 @@ nav {
     transition : transform 0.2s ease-in-out;
 }
 
-nav ul {
+nav ul { 
     padding : 0;
     margin : 0;
     display: flex;

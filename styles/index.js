@@ -7,4 +7,4 @@ document.getElementById('menuButton').addEventListener('click', function() {
         menuBar.style.display = 'none';
         this.textContent = '메뉴 열기';
     }
-});
+}); 

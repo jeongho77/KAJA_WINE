@@ -4,11 +4,11 @@
 }
 
 body{
-    background-color: white;
+    background-color: black;
 }
 
 header {
-    background-color:  rgba(0,0,0,0.856);
+    background-color: rgb(65 8 8 / 86%) !important;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -119,11 +119,12 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     background-color: rgba(24, 24, 24, 0.822);
-    height : 100vh;
-    
+    height : 100vh;    
 }
+
 .wrapper {
     width: 100%;
+    height : 100%;
     background-color: black;
 }
 
@@ -192,7 +193,7 @@ nav ul li a {
 }
 
 .menu {
-    width: calc(33.33% - 10px); /* 3개 요소가 한 라인에 채워지도록 너비 설정 */
+    width: calc(33.33% - 10px); /* 3개 요소가 한 라인에 채워지도록 너비 설정 */    
     border: 0.2px solid black;
     box-sizing: border-box; /* 요소의 너비에 테두리를 포함 */
 }
@@ -204,5 +205,6 @@ nav ul li a {
 
 .photo img {
     width: 100%; /* 사진이 컨테이너의 너비를 채우도록 설정 */
-    height: auto; /* 가로세로 비율 유지 */
+    max-height: 600px; /* 이미지의 최대 높이 설정 */
+    height: auto;
 }

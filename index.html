@@ -35,22 +35,23 @@
     </nav>
 
     <div class="container">
-        <div class="wrapper_left">1
-            <div class="category">
-                <div class="category_intro"></div>
-                <div class="category_body"></div>
+        <div class="wrapper">
+            <div class="search">
+                <form id="search_form" method="get">
+                    <input type="text" name="keyword" id="keyword" placeholder="검색어를 입력하세요">
+                    <button type="button" onclick="search()">검색하기</button>
+                </form>
             </div>
-        </div>
-        <div class="wrapper_right">2
-            <div class="menu">
-                <div class="menu_intro">
-                    <div class="menu_photo"></div>
-                    <div class="menu_name"></div>
-                    <div class="menu_price"></div>
-                </div>
-            </div>
-        </div>
 
+
+            <div class="category">
+                <div class="menu">
+                    <div class="photo"></div>
+                    <div class="name"></div>
+                    <div class="price"></div>
+                </div>        
+            </div>
+        </div>
     </div> 
 
 

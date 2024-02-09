@@ -109,23 +109,45 @@ nav ul li a {
     text-align: center; /* 로고 텍스트를 가운데 정렬합니다. */
 }
 
-.logo h1 a {
+.logo a {
     text-decoration: none;
-    color : orange;
+    color : white;
+    font-size: 50px;
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    background-color: rgba(24, 24, 24, 0.822);
+    height : 100vh;
+    
 }
-
-.wrapper_left {
-    width : 30%;
-    height: max-content;
-    background-color: red;
-}
-.wrapper_right {
+.wrapper {
+    width: 100%;
     background-color: blue;
+}
 
-    height: 150px;
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top : 3%;    
+}
+
+#search_form {
+    width: 400px; /* 원하는 너비로 조절 */
+    margin: 20px auto; /* 가운데 정렬을 위한 마진 설정 */
+    display: flex;
+    justify-content: space-between; /* 자식 요소 사이에 간격 주기 */
+}
+
+#search_form input[type="text"] {
+    flex: 1; /* 남은 공간을 모두 채우도록 설정 */
+    padding: 15px; /* 내부 여백 설정 */
+    width:400px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#search_form button {
+   background-color: aqua;
+   border-radius: 0px 15px 15px 0px;
 }

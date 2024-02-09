@@ -124,7 +124,7 @@ nav ul li a {
 }
 .wrapper {
     width: 100%;
-    background-color: blue;
+    background-color: black;
 }
 
 .search {
@@ -150,4 +150,59 @@ nav ul li a {
 #search_form button {
    background-color: aqua;
    border-radius: 0px 15px 15px 0px;
+}
+
+/* .category {
+    background-color: white;
+    height : 100%;
+    margin : 3% 3%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.menu {
+    width : 100%;
+    border: 0.2px solid black;
+}
+
+.photo img{
+    width : 80%;
+    height : 60%;
+}
+
+.line {
+    display :flex;
+    flex-direction: row;
+} */
+
+.category {
+    margin: 3% 3%;
+    overflow: hidden; /* 오버플로우 처리 */
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap; /* 요소들을 다음 라인으로 줄바꿈 */
+    
+    text-align: center;
+    gap: 10px; /* 요소들 사이에 간격 추가 */
+}
+
+.menu {
+    width: calc(33.33% - 10px); /* 3개 요소가 한 라인에 채워지도록 너비 설정 */
+    border: 0.2px solid black;
+    box-sizing: border-box; /* 요소의 너비에 테두리를 포함 */
+}
+
+.menu div {
+    background-color : white;
+    color: black;
+}
+
+.photo img {
+    width: 100%; /* 사진이 컨테이너의 너비를 채우도록 설정 */
+    height: auto; /* 가로세로 비율 유지 */
 }

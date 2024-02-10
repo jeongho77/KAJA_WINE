@@ -158,6 +158,7 @@ nav ul li a {
     font-size: 0px;
     padding : 10px;
     vertical-align:middle;
+    cursor: pointer;
 }
 
 #search_form .btn_search {
@@ -212,7 +213,7 @@ nav ul li a {
 } */
 
 .category {
-    margin: 3% 3%;
+    margin: 0px 3%;
     overflow: hidden; /* 오버플로우 처리 */
 }
 
@@ -262,10 +263,43 @@ nav ul li a {
         width: calc(33.33% - 10px);
     }
     nav ul {
-        font-size: 25px; /* 휴대폰 화면에 적용될 글꼴 크기 */
+        font-size: 20px; /* 휴대폰 화면에 적용될 글꼴 크기 */
+        text-decoration: none;
+        height : max-content;
+    }
+
+    header {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    header label{
+        width: 20px;
+        height : 20px;
+    }
+
+    #search_form input[type="text"] {
+    width : 0px;
+    }
+
+    .search {
+        margin: 0px 10%;
+    }
+
+    .btn_filter{
+        margin-right: 10px;
+    }
+
+    .name,.price{
+        font-size: 10px;
         text-decoration: none;
     }
-    header {
-        padding : 10px 20px;
+
+    .logo a {
+       
+        font-size: 30px;
     }
 }

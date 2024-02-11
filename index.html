@@ -17,7 +17,7 @@
         <input type="checkbox" id = "checkbox"/>
 
         <div class="logo"> 
-            <h1><a href="#none">KAJA-WINE</a></h1>
+            <h1><a href="index.html">KAJA-WINE</a></h1>
         </div>
 
         <div>
@@ -27,6 +27,7 @@
         <ul>
             <li><a href="#">전체보기</a></li>
             <li><a href="#">와인</a></li>
+            <li><a href="#">샴페인</a></li>
             <li><a href="#">위스키</a></li>
             <li><a href="#">전통주</a></li>
             <li><a href="#">사케</a></li>
@@ -39,13 +40,65 @@
             <div class="search">
                 <form id="search_form" method="get">
                     <input type="text" name="keyword" id="keyword" placeholder="통합 검색">
-                    <div class="text_search"><button type="button" onclick="search()" class="btn_search"></button></div>
+                    <div class="text_search">
+                        <button type="button" onclick="search_Menu()" class="btn_search"></button>
+                    </div>
 
                     <div class="filter">
-                        <button type="button" class="btn_filter">필터</button>
+                        <button type="button" class="btn_filter" onclick="form_filter_on()">필터</button>
                     </div>
                 </form>
             </div>
+
+            <div class="filter_wrapper" id="filter_wrapper">
+                <div class="filter_form_div">
+                    <ul class="filter-grade-box">
+						<li>
+                            <span>당도</span>
+							<div id="inputListTasteSweet" class="filter-grade"> 
+								<a href="javascript:void(0);" value="1" onclick="onClickTaste(this, 'TASTE_SWEET', '당도', 1);" class="on">당도1</a>
+								<a href="javascript:void(0);" value="2" onclick="onClickTaste(this, 'TASTE_SWEET', '당도', 2);" class="on">당도2</a>
+								<a href="javascript:void(0);" value="3" onclick="onClickTaste(this, 'TASTE_SWEET', '당도', 3);" class="on">당도3</a>
+								<a href="javascript:void(0);" value="4" onclick="onClickTaste(this, 'TASTE_SWEET', '당도', 4);" class="on">당도4</a>
+								<a href="javascript:void(0);" value="5" onclick="onClickTaste(this, 'TASTE_SWEET', '당도', 5);" class="on">당도5</a>
+							</div>
+						</li>
+						<li>
+							<span>산도</span>
+							<div id="inputListTasteAcidity" class="filter-grade">
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_ACIDITY', '산도', 1);">산도1</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_ACIDITY', '산도', 2);">산도2</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_ACIDITY', '산도', 3);">산도3</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_ACIDITY', '산도', 4);">산도4</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_ACIDITY', '산도', 5);">산도5</a>
+							</div>
+						</li>
+                        
+						<li>
+							<span>바디</span>
+							<div id="inputListTasteBody" class="filter-grade">
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_BODY', '바디', 1);">바디1</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_BODY', '바디', 2);">바디2</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_BODY', '바디', 3);">바디3</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_BODY', '바디', 4);">바디4</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_BODY', '바디', 5);">바디5</a>
+							</div>
+						</li>
+						<li>
+							<span>타닌</span>
+							<div id="inputListTasteTannin" class="filter-grade">
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_TANNIN', '타닌', 1);">타닌1</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_TANNIN', '타닌', 2);">타닌2</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_TANNIN', '타닌', 3);">타닌3</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_TANNIN', '타닌', 4);">타닌4</a>
+								<a href="javascript:void(0);" onclick="onClickTaste(this, 'TASTE_TANNIN', '타닌', 5);">타닌5</a>
+							</div>
+						</li>
+					</ul>
+                </div>
+            </div>
+
+            
 
             <div class="category">
                 <div class="line">

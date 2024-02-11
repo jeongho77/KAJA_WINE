@@ -130,7 +130,6 @@ nav ul li a {
 
 .search {
     display: flex;
-    margin-top : 3%;
     align-items: center;    
 }
 
@@ -174,6 +173,10 @@ nav ul li a {
     
 }
 
+.filter_wrapper{
+    display: none;
+}
+
 .filter {
     display: flex;
     margin-left : 20px;
@@ -185,6 +188,43 @@ nav ul li a {
     height: 100%;
     line-height: 0;
     border-radius: 10px;
+}
+
+.filter_form_div {
+    background-color: white;
+    margin: 0px 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter-grade-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.filter-grade a {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: solid 1px #ccc;
+    text-indent: -9999em;
+    border-radius: 50%;
+}
+.filter-grade-box li {
+    overflow: hidden;
+    width: 50%;
+    margin: 0 0 15px 0 !important;
+    text-align: center;
+}
+
+.filter-grade-box .filter-grade {
+    margin: 0;
+}
+
+.filter-grade-box li > span {
+    font-size: 14px;
+    padding-right: 15px;
+    float: left;
 }
 /* .category {
     background-color: white;
@@ -222,6 +262,7 @@ nav ul li a {
     flex-wrap: wrap; /* 요소들을 다음 라인으로 줄바꿈 */
     text-align: center;
     gap: 10px; /* 요소들 사이에 간격 추가 */
+    justify-content: space-between;
 }
 
 .menu {

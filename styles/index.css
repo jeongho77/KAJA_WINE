@@ -173,7 +173,8 @@ nav ul li a {
     
 }
 
-.filter_wrapper{
+.filter_wrapper,
+.hidden{
     display: none;
 }
 
